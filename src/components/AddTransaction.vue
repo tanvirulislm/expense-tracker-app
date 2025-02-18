@@ -48,7 +48,7 @@ const handleSubmit = () => {
         v-model="title"
         type="text"
         placeholder="Enter title"
-        class="w-full p-1 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        class="w-full p-2 rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
       />
       <span v-if="errors.title" class="absolute text-red-500 text-xs mt-1">{{
         errors.title
@@ -63,7 +63,7 @@ const handleSubmit = () => {
         min="0"
         step="0.01"
         placeholder="Enter amount"
-        class="w-full p-1 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        class="w-full p-2 rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
       />
       <span v-if="errors.amount" class="absolute text-red-500 text-xs mt-1">{{
         errors.amount
@@ -74,7 +74,7 @@ const handleSubmit = () => {
       <label class="block text-sm font-medium text-gray-700 mb-1">Type</label>
       <select
         v-model="type"
-        class="w-full p-1 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+        class="w-full p-2 rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
       >
         <option>Income</option>
         <option>Expense</option>

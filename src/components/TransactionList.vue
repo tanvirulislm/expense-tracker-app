@@ -57,7 +57,7 @@ const handleDelete = (index, transaction) => {
     </div>
 
     <div v-else class="overflow-x-auto">
-      <table class="min-w-full divide-y divide-gray-200">
+      <table class="min-w-full border border-gray-100 divide-y divide-gray-200">
         <thead class="bg-gray-50">
           <tr>
             <th
@@ -76,7 +76,7 @@ const handleDelete = (index, transaction) => {
               Type
             </th>
             <th
-              class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              class="px-6 text-right py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
               Action
             </th>
@@ -99,7 +99,7 @@ const handleDelete = (index, transaction) => {
             <td class="px-6 py-4 whitespace-nowrap uppercase">
               {{ transaction.type }}
             </td>
-            <td class="px-6 py-4 whitespace-nowrap">
+            <td class="px-6 py-4 whitespace-nowrap text-right">
               <button
                 @click="handleDelete(index, transaction)"
                 class="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 cursor-pointer"
