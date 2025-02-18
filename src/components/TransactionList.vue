@@ -76,7 +76,7 @@ const handleDelete = (index, transaction) => {
               Type
             </th>
             <th
-              class="px-6 text-right py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+              class="px-6 text-right py-3 text-xs font-medium text-gray-500 uppercase tracking-wider"
             >
               Action
             </th>
